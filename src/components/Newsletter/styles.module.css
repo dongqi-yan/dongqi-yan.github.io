@@ -1,0 +1,82 @@
+.formContainer {
+	margin: auto;
+	margin-top: 4.9em;
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 10px;
+	width: fit-content;
+	border: 0.1em solid transparent;
+}
+
+.formContainer:hover {
+	/* border: 0.1em solid var(--ifm-color-primary); */
+}
+
+.formContainer > h3 {
+	text-align: center;
+}
+
+.inputContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.inputContainer > a > svg {
+	margin-left: 1rem;
+	cursor: pointer;
+}
+
+.input {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border: 0.1em solid var(--ifm-border-color);
+
+	width: 100%;
+	padding: 0.6em;
+	padding-right: 1.5em;
+	font-size: larger;
+	color: var(--ifm-color-primary);
+
+	resize: vertical;
+}
+
+.input::placeholder {
+	color: var(--ifm-color-primary);
+}
+
+.input:focus {
+	outline: none !important;
+}
+
+.submit {
+	position: absolute;
+	right: 15px;
+	top: 13px;
+	margin-left: 0.5em;
+	color: var(--ifm-footer-link-color);
+	font-size: small;
+}
+
+.status {
+	text-align: center;
+}
+
+.success {
+	color: green;
+}
+
+.sending {
+	color: blue;
+}
+
+.error {
+	color: red;
+}
