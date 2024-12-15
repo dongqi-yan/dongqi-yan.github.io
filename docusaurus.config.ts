@@ -30,12 +30,8 @@ const config: Config = {
   },
 
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'cn'],
-    localeConfigs: {
-      en: { label: 'English' },
-      cn: { label: '简体中文' },
-    },
+    defaultLocale: 'en', // 设定默认语言
+    locales: ['en'], // 设定只有一个语言
   },
 
   presets: [
@@ -98,16 +94,21 @@ const config: Config = {
           position: 'right',
           to: '/blog',
         },
-        {
-          type: 'localeDropdown',
-          position: 'right',
-        },
+        // {
+        //   type: 'localeDropdown',
+        //   position: 'right',
+        // },
         {
           href: `https://github.com/${websiteConfig.GITHUB_USER}/${websiteConfig.REPOSITORY_NAME}`,
           label: 'GitHub',
           position: 'right',
         },
       ],
+    },
+    docs: {
+      sidebar: {
+        hideable: true,
+      },
     },
     footer: {
       links: [
