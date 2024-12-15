@@ -1,5 +1,5 @@
 {
-  "DEPLOYMENT_BRANCH": "deploy",
+  "DEPLOYMENT_BRANCH": "gh-pages",
   "GITHUB_USER": "dongqi-yan",
   "REPOSITORY_NAME": "russellyan.com",
   "MAILCHIMP_URL": "iamrussellyan@gmail.com"
